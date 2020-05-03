@@ -30,3 +30,8 @@ This node.js application regularly checks the Chronodrive web site for available
 ## Usage
 
 - Run `npm start`
+
+## Heroku
+
+- Add the following buildpack to heroku: [https://github.com/jontewks/puppeteer-heroku-buildpack](https://github.com/jontewks/puppeteer-heroku-buildpack)
+- Deploy normally
