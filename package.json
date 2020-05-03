@@ -13,5 +13,8 @@
   "dependencies": {
     "@sendgrid/mail": "^7.1.0",
     "playwright": "^0.16.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
