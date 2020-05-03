@@ -1,0 +1,17 @@
+{
+  "name": "chronodrive-slot-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "Someone",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.1.0",
+    "playwright": "^0.16.0"
+  }
+}
