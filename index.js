@@ -15,7 +15,7 @@ sgMail.setApiKey(sendGridApiKey);
 
 const checkAvailability = async () => {
   // Create a Chromium browser context
-  const crBrowser = await chromium.launch();
+  const crBrowser = await chromium.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const crContext = await crBrowser.newContext();
   const page = await crContext.newPage();
 
