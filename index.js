@@ -43,9 +43,9 @@ const checkAvailability = async () => {
   const sectionText = await page.$eval('//*[@id="m_panier"]/div[4]', (e) => e.textContent);
   console.log(`${new Date().toLocaleString()}: ${sectionText}`);
   if (sectionText !== 'Pas de créneau disponible') {
-    await page.screenshot({ path: `images\\chronodrive-${new Date()}.png` });
     console.log('Créneau trouvé!');
     sendEmail(['pierrick.lozach@genesys.com', 'tessier_veronique@hotmail.com'], 'pierrick.lozach@genesys.com', 'Chronodrive - Créneau trouvé! :-)', sectionText);
+    await page.screenshot({ path: `chronodrive-${new Date().toJSON().replace(':', '-')}.png` });
   } else {
     //sendEmail(['pierrick.lozach@genesys.com', 'extremesynergy@hotmail.com'], 'pierrick.lozach@genesys.com', 'Pas de créneau trouvé :-(', sectionText);
   }
